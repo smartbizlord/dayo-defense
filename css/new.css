@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-green: #4CAF50;
+    --dark-primary-green: #408542;
+    --secondary-green: #9bff9e;
+    --white: #fff;
+    --dim-white: #dddddd;
+    --danger-red: #ff0000;
+}
+
+.primary-green-text {
+    color: var(--primary-green);
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 1px 1px 6px black;
+    top: 0;
+    left: 0;
+}
+
+.logo-wrapper {
+    height: 70%;
+}
+
+.logo-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: 100%;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.links-wrapper {
+    display: flex;
+    list-style-type: none;
+    gap: .5rem;
+}
+
+.link-item > a {
+    text-decoration: none;
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.link-item > a:hover {
+    background-color: var(--secondary-green);
+}
+
+.action-wrapper  {
+    display: flex;
+    gap: .5rem;
+}
+
+.action-wrapper > a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary-green);
+    padding: 10px 30px;
+    border-radius: 16px;
+}
+
+.action-wrapper > a:hover {
+    background-color: var(--dark-primary-green);
+}
+
+#hero-section {
+    height: calc(100vh - 150px);
+    background-color: var(--primary-green);
+    background-image: url(../images/updated-woman.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+    color: var(--white);
+}
+
+.welcome {
+    font-weight: bold;
+}
+
+.school-name {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.university-text {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-left: 2rem;
+}
+
+.country-text {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-left: 10rem;
+}
+
+.small-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.small-texts > p:last-child {
+    margin-left: 1rem;
+}
+
+.action-wrapper-inverse > a {
+    text-decoration: none;
+    color: var(--primary-green);
+    background-color: var(--white);
+    padding: 10px 30px;
+    border-radius: 16px;
+}
+
+.action-wrapper-inverse > a:hover {
+    background-color: var(--dim-white);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    box-shadow: 1px 1px 2px black inset;
+}
+
+section {
+    min-height: calc(100vh - 150px);
+    padding: 0 100px;
+    background-color: var(--primary-green);
+    /* background-image: url(../images/updated-woman.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+    color: var(--white); */
+}
+
+.who-we-are {
+    padding: 30px 20px;
+    box-shadow: 2px 2px 4px var(--primary-green);
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+.who-we-are > h2 {
+    text-align: center;
+}
+
+.our-mission-value {
+    display: flex;
+    gap: 2rem;
+}
+
+.vision-mission {
+    padding: 30px 20px;
+    box-shadow: 2px 2px 4px var(--primary-green);
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+.vision-mission > h2 {
+    text-align: center;
+}
+
+.form-origin {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.form-wrapper {
+    border-radius: 8px;
+    background-color: var(--white);
+    width: 600px;
+    /* height: 1000px; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* gap: .5rem; */
+}
+
+.form-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    gap: .5rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* justify-content: center; */
+}
+
+.form-item > input {
+    height: 35px;
+    border-radius: 8px;
+}
+
+.gender-heading {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.form-item:has(.gender-heading) {
+    gap: .5rem;
+}
+
+.dropdown > select {
+    height: 35px;
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 0 1rem;
+}
+
+.register-submit {
+    background-color: var(--primary-green);
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-groups {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.form-section:has(.form-groups) {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#danger {
+    background-color: var(--danger-red);
+}
+
+.grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 400px; */
+    /* justify-content: space-between; */
+    padding: 2rem;
+}
+
+.student-wrapper {
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+}
+
+.student-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.informative {
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: space-between;
+}
